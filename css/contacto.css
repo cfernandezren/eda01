@@ -1,0 +1,30 @@
+.contacto {
+    display: flex;
+    justify-content: space-around;
+}
+
+section iframe {
+    display: flex;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+section .centradopagina {
+    margin: auto;
+    width: 80%;
+}
+
+.contactos {
+    background-color: #f7f5f5;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    width: 93%;
+}
+
+.row textarea {
+    background-color: #f7f5f5;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    resize: none;
+    width: 93%;
+}

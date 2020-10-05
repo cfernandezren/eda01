@@ -1,0 +1,8 @@
+.hospital {
+    margin: 2em 0;
+}
+
+.hospital iframe {
+    height: 32em;
+    width: 100%;
+}

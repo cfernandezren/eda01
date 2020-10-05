@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fontawesome-free-5.15.0-web/css/all.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/listado-de-enfermedades.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="css/detalles.css">
+  <title>Formulario de Contacto</title>
+</head>
+
+<body>
+  <header>
+    <div id="img-buscador-container">
+      <div id="header-img">
+        <a href="index.html"><img src="img/swiss.png" alt="inicio" /></a>
+      </div>
+      <form action="#" method="get" id="buscador-form" enctype="application/x-www-form-urlencoded">
+        <input list="data" id="text-buscador" name="text-buscador" placeholder="Buscar enfermedad" />
+        <datalist id="data">
+          <option value="enfermedad1">
+          <option value="enfermedad2">
+          <option value="enfermedad3">
+          <option value="enfermedad4">
+          <option value="enfermedad5">
+        </datalist>
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+    <nav id="navegacion">
+      <ul>
+        <li><a href="listado-de-enfermedades.html">Enfermedades</a></li>
+        <li><a href="vacunas.html">Vacunas</a></li>
+        <li><a href="mapa.html">Hospitales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contacto centradopagina">
+      <article>
+        <h2 class="filtrado">CONTACTO</h2>
+        <form action="" method="post" id="contacto">
+          <div class="row">
+            <div>
+              <input type="text" id="nombre-contacto" placeholder="Nombre y Apellido" class="contactos" required>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <input type="text" id="email-contacto" placeholder="Email" class="contactos" required>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <input type="text" id="telefono-contacto" placeholder="telefono" class="contactos" required>
+            </div>
+          </div>
+          <div class="row">
+            <textarea name="" id="consulta" cols="30" rows="10" placeholder="Ingrese su consulta"></textarea>
+          </div>
+          <div class="enviarBtnEnd">
+            <input type="submit" value="Enviar" class="verdetalles">
+          </div>
+        </form>
+      </article>
+      <article class="imghospital">
+        <h2 class="filtrado">DATOS DE CONTACTO</h2>
+        <p>Bartolomé Mitre 137</p>
+        <p>0800 444 7700</p>
+        <p><a href="mailto:info@swissmedical.com.ar">info@swissmedical.com.ar</a></p>
+        <p><a href="https://www.swissmedical.com.ar/" target="_blank">https://www.swissmedical.com.ar/</a></p>
+      </article>
+    </section>
+
+    <section class="centradopagina">
+      <h2 class="filtrado">Ubicación</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52523.36803268188!2d-58.638833836520206!3d-34.63675543133855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7240223731c2cb67!2sSwiss%20Medical%20Medicina%20Privada%20-%20Sucursal%20Ramos%20Mej%C3%ADa!5e0!3m2!1ses!2sar!4v1601783709596!5m2!1ses!2sar"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <ul class="nombres-de-integrantes">
+      <li>Alejandro Acosta DNI 35396973</li>
+      <li>Otro Integrante DNI xxxxxxxx</li>
+      <li>Otro Integrante DNI xxxxxxxx</li>
+    </ul>
+    <ul>
+      <li><a href="listado-de-enfermedades.html">Enfermedades</a></li>
+      <li><a href="vacunas.html">Vacunas</a></li>
+      <li><a href="mapa.html">Hospitales</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <ul class="redes">
+      <li><a href=""><i class="fab fa-facebook"></i></a></i></li>
+      <li><a href=""><i class="fab fa-instagram"></i></a></i></li>
+      <li><a href=""><i class="fab fa-twitter"></i></a></i></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

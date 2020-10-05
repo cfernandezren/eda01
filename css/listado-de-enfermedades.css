@@ -1,0 +1,58 @@
+.centradopagina {
+    margin: auto;
+    width: 80%;
+}
+
+.filtrado {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.filtrado h1 {
+    padding: 0.6em;
+    text-align: center;
+}
+
+.filtrado input {
+    background-color: #f0f0f0;
+    padding: 0.6em;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    display: block;
+    padding: 0.4em;
+}
+
+
+.listaenfermedad {
+    display: flex;
+    margin: 2em 0;
+}
+
+.listaenfermedad div {
+    width: 50%;
+}
+
+.listaenfermedad div img {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.verdetalles {
+    background-color: #4a4e4e;
+    border-radius: 5px;
+    color: #f0f0f0;
+    display: inline-block;
+    font-weight: 600;
+    margin: 0.3em 0;
+    padding: 0.3em 1em;
+}
+
+.verdetalles:hover {
+    background-color: #707474;
+}

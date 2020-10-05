@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.15.0-web/css/all.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/listado-de-enfermedades.css">
+    <link rel="stylesheet" href="css/detalles.css">
+    <title>Detalles de enfermedades</title>
+</head>
+
+<body>
+    <header>
+        <div id="img-buscador-container">
+            <div id="header-img">
+                <a href="index.html"><img src="img/swiss.png" alt="inicio" /></a>
+            </div>
+            <form action="#" method="get" id="buscador-form" enctype="application/x-www-form-urlencoded">
+                <input list="data" id="text-buscador" name="text-buscador" placeholder="Buscar enfermedad" />
+                <datalist id="data">
+                    <option value="enfermedad1">
+                    <option value="enfermedad2">
+                    <option value="enfermedad3">
+                    <option value="enfermedad4">
+                    <option value="enfermedad5">
+                </datalist>
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <nav id="navegacion">
+            <ul>
+                <li><a href="listado-de-enfermedades.html">Enfermedades</a></li>
+                <li><a href="vacunas.html">Vacunas</a></li>
+                <li><a href="mapa.html">Hospitales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="centradopagina">
+        <h2 class="filtrado">CORONAVIRUS</h2>
+        <div class="listaenfermedad">
+            <div>
+                <img src="img/coronavirus.jpg" alt="coronavirus">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui et illum ex voluptas quia
+                    repellat, amet nisi accusantium nostrum. Repellendus, voluptatum! Temporibus officiis assumenda
+                    dolorem nam aliquid, eaque libero!</p>
+            </div>
+        </div>
+
+        <section>
+            <h2 class="filtrado">FORMULARIO DE DETECCIÓN(TEST) DE CORONAVIRUS (COVID19)</h2>
+            <div id="formulario">
+                <article class="formulario-izquierda">
+                    <p>Hola usuario! Si tienes síntomas de XXXX o has estado en contacto
+                        con una persona afectada deberías hacer un control y seguimiento diario de tus
+                        síntomas.
+                        Esta aplicación te permitirá hacer un seguimiento de la evolución de los
+                        síntomas y te dará las indicaciones y consejos a seguir en cada caso.
+                        El uso de este servicio supone la aceptación de los términos y la política de
+                        privacidad descritos en <a href="">'Ver las condiciones y políticas'”</a> </p>
+                    <h1 class="filtrado">SINTOMAS</h1>
+                    <div class="medidas">
+                        <img src="img/24-fiebre-dolor-garganta.png" alt="fiebre y dolor de garganta">
+                        <img src="img/25-fiebre-dificultad-respirar.png" alt="fiebre y dificultad para respirar">
+                        <img src="img/23-fiebre-tos.png" alt="fiebre y tos">
+                    </div>
+                </article>
+                <article class="formulario-derecha">
+                    <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+                        <div class="row">
+                            <label for="nameApe">Nombre y Apellido:</label>
+                            <div>
+                                <input type="text" id="nombre" name="nombre">
+                            </div>
+                        </div>
+                        <div class="row fila-compartida">
+                            <label for="dni">DNI:</label>
+                            <div>
+                                <input type="text" id="dni" name="dni" class="halfinput">
+                            </div>
+
+                        </div>
+                        <div class="row fila-compartida">
+                            <label for="telefono">Teléfono:</label>
+                            <div>
+                                <input type="text" id="telefono" name="telefono" class="halfinput">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="fila-compartida">
+                                <label for="ciudad">Ciudad:</label>
+                                <div>
+                                    <input type="text" class="halfinput">
+                                </div>
+                            </div>
+                            <div class="fila-compartida">
+                                <label for="sexo">Sexo</label>
+                                <input type="radio" name="sexo" value="M" checked>M
+                                <input type="radio" name="sexo" value="F">F
+                            </div>
+
+                        </div>
+
+                        <div id="preguntas">
+                            <div class="row preguntas-flexible">
+                                <label for="exterior">Has viajado al exterior de la República Argentina?</label>
+                                <div>
+                                    <input type="radio" name="si" value="si">Si
+                                    <input type="radio" name="no" checked>No
+                                </div>
+                            </div>
+
+                            <div class="row" id="paises-visitados">
+                                <label for="viaje">Paises visitados</label>
+                                <select id="paises" name="paises">
+                                    <option value="Brasil">Brasil</option>
+                                    <option value="EEUU">EEUU</option>
+                                    <option value="España">España</option>
+                                    <option value="China">China</option>
+                                </select>
+                            </div>
+                            <h4>Por favor indica los sintomas que presentas</h4>
+                            <div class="row preguntas-flexible">
+                                <label for="titulo">Tuviste fiebre mayor a 38 grados?</label>
+                                <div>
+                                    <input type="radio" name="si" value="si">Si
+                                    <input type="radio" name="no" checked>No
+                                </div>
+
+                            </div>
+                            <div class="row preguntas-flexible">
+                                <label for="titulo">Tuviste dolor de cabeza?</label>
+                                <div>
+                                    <input type="radio" name="si" value="si">Si
+                                    <input type="radio" name="no" checked>No
+                                </div>
+
+                            </div>
+                            <div class="row preguntas-flexible">
+                                <label for="titulo">Tuviste tos persistente?</label>
+                                <div>
+                                    <input type="radio" name="si" value="si">Si
+                                    <input type="radio" name="no" checked>No
+                                </div>
+                            </div>
+                            <div class="row preguntas-flexible">
+                                <label for="titulo">Tuviste dolor de garganta?</label>
+                                <div>
+                                    <input type="radio" name="si" value="si">Si
+                                    <input type="radio" name="no" checked>No
+                                </div>
+
+                            </div>
+                            <div class="row preguntas-flexible">
+                                <label for="titulo">Tuviste dificultad para respirar?</label>
+                                <div>
+                                    <input type="radio" name="si" value="si">Si
+                                    <input type="radio" name="no" checked> No
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row fila-compartida" id="direccion">
+                            <label for="direccion">Direccion:</label>
+                            <div>
+                                <input type="text" class="halfinput">
+                            </div>
+                        </div>
+                        <div class="row fila-compartida" id="ciudad">
+                            <label for="ciudad">Ciudad:</label>
+                            <div>
+                                <input type="text" class="halfinput">
+                            </div>
+                        </div>
+                        <div class="enviarBtnEnd">
+                            <input type="submit" value="Enviar test" class="verdetalles">
+                        </div>
+                    </form>
+                </article>
+
+            </div>
+        </section>
+        <section>
+            <h1 class="filtrado">MEDIDAS DE PRECAUCION</h1>
+            <article class="medidas precaucion">
+                <div>
+                    <img src="img/14-lavarse-manos.png" alt="lavarse las manos">
+                    <img src="img/16-tocar-nariz.png" alt="tocar la nariz">
+                </div>
+                <div>
+                    <img src="img/15-estornudar.png" alt="estornudar">
+                    <img src="img/17-ventilar.png" alt="ventilar">
+                </div>
+
+                <div>
+                    <img src="img/18-limpiar-objetos.png" alt="limpiar objetos">
+                    <img src="img/20-reducir-contacto.png" alt="reducir contacto">
+                </div>
+                <div>
+                    <img src="img/19-permanecer-domicilio.png" alt="permanecer en el domicilio">
+                    <img src="img/21-no-compartir-mate.png" alt="no compartir mate">
+                </div>
+
+            </article>
+
+            <section>
+                <h2 class="filtrado">HOSPITAL MAS CERCANO ESPECIALIZADO EN LA ENFERMEDAD</h2>
+                <article class="hospitalcercano">
+                    <div class="imghospital">
+                        <h2 class="filtrado">HOSPITAL POSADAS</h2>
+                        <p>+541144699300</p>
+                        <p>Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386</p>
+                        <p>Palomar</p>
+                        <div>
+                            <img src="img/hospital.jpg" alt="hospital">
+                        </div>
+                    </div>
+                    <div class="imghospital">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9678719346634!2d-58.577513284769594!3d-34.630252180452665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb80b7396b9af%3A0xef2dc611cc3efabb!2sPosadas!5e0!3m2!1ses-419!2sar!4v1591218081577!5m2!1ses-419!2sar"
+                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
+                </article>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <ul class="nombres-de-integrantes">
+            <li>Alejandro Acosta DNI 35396973</li>
+            <li>Otro Integrante DNI xxxxxxxx</li>
+            <li>Otro Integrante DNI xxxxxxxx</li>
+        </ul>
+        <ul>
+            <li><a href="listado-de-enfermedades.html">Enfermedades</a></li>
+            <li><a href="vacunas.html">Vacunas</a></li>
+            <li><a href="mapa.html">Hospitales</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <ul class="redes">
+            <li><a href=""><i class="fab fa-facebook"></i></a></i></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></i></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></i></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
