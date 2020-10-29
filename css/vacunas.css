@@ -1,0 +1,52 @@
+.semana {
+    display: flex;
+}
+  
+.dia {
+    flex-grow: 1;
+    
+    flex-basis: 0;
+    
+}
+
+.dia_pasado{
+    flex-grow: 1;
+    
+    flex-basis: 0;
+    
+}
+.mes {
+    max-width: 100px;
+    margin: 20px auto;
+    
+}
+.calendario{
+    color: #000000;
+    font-size: 30px;
+}
+  
+.semana {
+    height: 155px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 1px solid #000000;
+  }
+  
+.dia {
+    color: #2d09f9;
+    font-size: 20px;
+    padding: 5px;
+    border:1px solid #000;
+  }
+  .dia_pasado {
+    color: #636363 ;
+    font-size: 20px;
+    opacity: 20%;
+    padding: 5px;
+    border:1px solid #000;
+    
+  }
+  .vacunacion{
+    color: #000000;
+    font-size: 50px;
+  }
