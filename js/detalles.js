@@ -19,6 +19,11 @@ function validardatos(){
         mensajeError+="<p>Es obligatorio que completes el campo telefono</p>";
     }
 
+    if(document.getElementById("ciudad").value==''){
+        error=true;
+        mensajeError+="<p>Es obligatorio que completes el campo ciudad</p>";
+    }
+
     var opciones1 = document.getElementsByName("exterior");
     var seleccionado1 = false
 
@@ -96,11 +101,11 @@ function validardatos(){
     }
 
     if(document.getElementsByName("respiracion").value=='si'){
-        if(document.getElementsByName("direccion").value==''){
+        if(document.getElementById("direccion").value==''){
             error=true;
             mensajeError+="<p>El campo direccion debe completarse</p>";
         }
-        if(document.getElementsByName("ciudad").value==''){
+        if(document.getElementById("ciudad2").value==''){
             error=true;
             mensajeError+="<p>El campo ciudad debe completarse</p>";
         }
