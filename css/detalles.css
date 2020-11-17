@@ -47,6 +47,18 @@
   justify-content: end;
 }
 
+.error>p {
+  font-style: italic;
+  color: #fa2727;
+  font-weight: bold;
+}
+
+.sinError {
+  font-style: italic;
+  color: #03bb03;
+  font-weight: bold;
+}
+
 select {
   border-radius: 0.2em;
   width: -webkit-fill-available;
@@ -65,10 +77,6 @@ select {
 
 .precaucion img {
   height: 10em;
-}
-
-#paises-visitados {
-  display: block;
 }
 
 .hospitalcercano {
@@ -111,7 +119,7 @@ select {
     width: 100%;
   }
 
-  .formulario-izquierda p{
+  .formulario-izquierda p {
     word-break: break-all;
   }
 
@@ -128,6 +136,7 @@ select {
     width: -moz-available;
     width: -webkit-fill-available
   }
+
   .medidas {
     flex-wrap: wrap;
   }
@@ -135,11 +144,13 @@ select {
   .imghospital {
     width: 100%;
   }
+
   .imghospital p {
     line-height: initial;
   }
+
   .imghospital iframe {
     height: auto;
     width: 100%;
-}
+  }
 }
